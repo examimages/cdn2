@@ -1,0 +1,80 @@
+<svg width="219" height="110" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300"  >
+  <defs>
+    <!-- Arrowhead Marker -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#000000" />
+    </marker>
+    
+    <!-- Styles -->
+    <style>
+      .node-text {
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 42px;
+        font-weight: bold;
+        fill: #000000;
+        text-anchor: middle;
+        dominant-baseline: central;
+      }
+      .label-text {
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        fill: #000000;
+        text-anchor: start;
+        dominant-baseline: central;
+      }
+      .connector {
+        stroke: #000000;
+        stroke-width: 3;
+        stroke-linecap: round;
+        fill: none;
+        marker-end: url(#arrow);
+      }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" />
+
+  <!-- ================= COLUMN 1 ================= -->
+  <!-- Top Node -->
+  <text x="150" y="60" class="node-text">I</text>
+  
+  <!-- Connector -->
+  <line x1="150" y1="100" x2="150" y2="190" class="connector" />
+  
+  <!-- Connector Label -->
+  <text x="175" y="145" class="label-text">+5</text>
+  
+  <!-- Bottom Node -->
+  <text x="150" y="240" class="node-text">N</text>
+
+
+  <!-- ================= COLUMN 2 ================= -->
+  <!-- Top Node -->
+  <text x="300" y="60" class="node-text">Q</text>
+  
+  <!-- Connector -->
+  <line x1="300" y1="100" x2="300" y2="190" class="connector" />
+  
+  <!-- Connector Label -->
+  <text x="325" y="145" class="label-text">+5</text>
+  
+  <!-- Bottom Node -->
+  <text x="300" y="240" class="node-text">V</text>
+
+
+  <!-- ================= COLUMN 3 ================= -->
+  <!-- Top Node -->
+  <text x="450" y="60" class="node-text">V</text>
+  
+  <!-- Connector -->
+  <line x1="450" y1="100" x2="450" y2="190" class="connector" />
+  
+  <!-- Connector Label -->
+  <text x="475" y="145" class="label-text">+5</text>
+  
+  <!-- Bottom Node -->
+  <text x="450" y="240" class="node-text">A</text>
+
+</svg>

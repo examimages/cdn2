@@ -1,0 +1,51 @@
+<svg width="230" height="112" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#000000" />
+    </marker>
+  </defs>
+
+  <!-- Style -->
+  <style>
+    .diagram-text {
+      font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-size: 24px;
+      fill: #000000;
+      font-weight: 500;
+    }
+    .connector {
+      fill: none;
+      stroke: #000000;
+      stroke-width: 2;
+    }
+    .operator-text {
+      font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-size: 24px;
+      fill: #000000;
+    }
+  </style>
+
+  <!-- Column 1: T -> -2 -> R -->
+  <g transform="translate(120, 0)">
+    <text x="0" y="80" text-anchor="middle" class="diagram-text">T</text>
+    <line x1="0" y1="100" x2="0" y2="180" class="connector" marker-end="url(#arrow)" />
+    <text x="25" y="150" text-anchor="start" class="operator-text">-2</text>
+    <text x="0" y="230" text-anchor="middle" class="diagram-text">R</text>
+  </g>
+
+  <!-- Column 2: K -> -4 -> G -->
+  <g transform="translate(300, 0)">
+    <text x="0" y="80" text-anchor="middle" class="diagram-text">K</text>
+    <line x1="0" y1="100" x2="0" y2="180" class="connector" marker-end="url(#arrow)" />
+    <text x="25" y="150" text-anchor="start" class="operator-text">-4</text>
+    <text x="0" y="230" text-anchor="middle" class="diagram-text">G</text>
+  </g>
+
+  <!-- Column 3: 80 -> +80 -> 160 -->
+  <g transform="translate(480, 0)">
+    <text x="0" y="80" text-anchor="middle" class="diagram-text">80</text>
+    <line x1="0" y1="100" x2="0" y2="180" class="connector" marker-end="url(#arrow)" />
+    <text x="25" y="150" text-anchor="start" class="operator-text">+80</text>
+    <text x="0" y="230" text-anchor="middle" class="diagram-text">160</text>
+  </g>
+</svg>

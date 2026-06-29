@@ -1,0 +1,53 @@
+<svg width="313" height="116" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300">
+  <defs>
+    <!-- Arrowhead definition for clean vector connectors -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#000" />
+    </marker>
+  </defs>
+
+  <!-- Global Styles: Monochrome, Sans-serif, 24px text -->
+  <g font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="24px" fill="#000" text-anchor="middle">
+    
+    <!-- Column 1: S to T (+1) -->
+    <g transform="translate(130, 0)">
+      <text x="0" y="60" font-weight="bold">S</text>
+      <line x1="0" y1="85" x2="0" y2="175" stroke="#000000" stroke-width="2" marker-end="url(#arrow)" />
+      <text x="50" y="140" text-anchor="start">+1</text>
+      <text x="0" y="220" font-weight="bold">T</text>
+    </g>
+
+    <!-- Column 2: T to V (+2) -->
+    <g transform="translate(290, 0)">
+      <text x="0" y="60" font-weight="bold">T</text>
+      <line x1="0" y1="85" x2="0" y2="175" stroke="#000000" stroke-width="2" marker-end="url(#arrow)" />
+      <text x="50" y="140" text-anchor="start">+2</text>
+      <text x="0" y="220" font-weight="bold">V</text>
+    </g>
+
+    <!-- Column 3: R to W (+5) -->
+    <g transform="translate(450, 0)">
+      <text x="0" y="60" font-weight="bold">R</text>
+      <line x1="0" y1="85" x2="0" y2="175" stroke="#000000" stroke-width="2" marker-end="url(#arrow)" />
+      <text x="50" y="140" text-anchor="start">+5</text>
+      <text x="0" y="220" font-weight="bold">W</text>
+    </g>
+
+    <!-- Column 4: A to Y (-2) -->
+    <g transform="translate(610, 0)">
+      <text x="0" y="60" font-weight="bold">A</text>
+      <line x1="0" y1="85" x2="0" y2="175" stroke="#000000" stroke-width="2" marker-end="url(#arrow)" />
+      <text x="50" y="140" text-anchor="start">-2</text>
+      <text x="0" y="220" font-weight="bold">Y</text>
+    </g>
+
+    <!-- Column 5: Y to T (-5) -->
+    <g transform="translate(770, 0)">
+      <text x="0" y="60" font-weight="bold">Y</text>
+      <line x1="0" y1="85" x2="0" y2="175" stroke="#000000" stroke-width="2" marker-end="url(#arrow)" />
+      <text x="50" y="140" text-anchor="start">-5</text>
+      <text x="0" y="220" font-weight="bold">T</text>
+    </g>
+
+  </g>
+</svg>

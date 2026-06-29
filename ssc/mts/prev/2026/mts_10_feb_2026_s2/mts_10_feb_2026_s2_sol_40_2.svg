@@ -1,0 +1,271 @@
+<svg width="668" height="227" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 600"   style="font-family: system-ui, -apple-system, sans-serif; font-size: 24px;">
+  <defs>
+    <!-- Arrowhead Marker -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#000000" />
+    </marker>
+  </defs>
+
+  <!-- Plain White Background -->
+  <rect width="100%" height="100%" fill="#ffffff" />
+
+  <!-- ================= ROW 1 ================= -->
+  <g id="row1">
+    <!-- Connections & Modifiers -->
+    <line x1="146" y1="120" x2="214" y2="120" stroke="#000000" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="180" y="90" text-anchor="middle" font-size="20" fill="#000000">+5</text>
+
+    <line x1="306" y1="120" x2="374" y2="120" stroke="#000000" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="340" y="90" text-anchor="middle" font-size="20" fill="#000000">+5</text>
+
+    <line x1="466" y1="120" x2="534" y2="120" stroke="#000000" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="500" y="90" text-anchor="middle" font-size="20" fill="#000000">+5</text>
+
+    <line x1="626" y1="120" x2="694" y2="120" stroke="#000000" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="660" y="90" text-anchor="middle" font-size="20" fill="#000000">+5</text>
+
+    <line x1="786" y1="120" x2="854" y2="120" stroke="#000000" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="820" y="90" text-anchor="middle" font-size="20" fill="#000000">+5</text>
+
+    <!-- Nodes -->
+    <g id="r1c1">
+      <rect x="67" y="103" width="72" height="40" rx="6" fill="#000000"/>
+      <rect x="64" y="100" width="72" height="40" rx="6" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+      <text x="100" y="128" text-anchor="middle" font-weight="bold" fill="#000000">B</text>
+    </g>
+
+    <g id="r1c2">
+      <rect x="227" y="103" width="72" height="40" rx="6" fill="#000000"/>
+      <rect x="224" y="100" width="72" height="40" rx="6" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+      <text x="260" y="128" text-anchor="middle" font-weight="bold" fill="#000000">G</text>
+    </g>
+
+    <g id="r1c3">
+      <rect x="387" y="103" width="72" height="40" rx="6" fill="#000000"/>
+      <rect x="384" y="100" width="72" height="40" rx="6" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+      <text x="420" y="128" text-anchor="middle" font-weight="bold" fill="#000000">L</text>
+    </g>
+
+    <g id="r1c4">
+      <rect x="547" y="103" width="72" height="40" rx="6" fill="#000000"/>
+      <rect x="544" y="100" width="72" height="40" rx="6" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+      <text x="580" y="128" text-anchor="middle" font-weight="bold" fill="#000000">Q</text>
+    </g>
+
+    <g id="r1c5">
+      <rect x="707" y="103" width="72" height="40" rx="6" fill="#000000"/>
+      <rect x="704" y="100" width="72" height="40" rx="6" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+      <text x="740" y="128" text-anchor="middle" font-weight="bold" fill="#000000">V</text>
+    </g>
+
+    <!-- Crossed out mistake -->
+    <g id="r1c6">
+      <rect x="867" y="103" width="72" height="40" rx="6" fill="#000000"/>
+      <rect x="864" y="100" width="72" height="40" rx="6" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+      <text x="900" y="128" text-anchor="middle" font-weight="bold" fill="#000000">Z</text>
+      <line x1="885" y1="120" x2="915" y2="120" stroke="#000000" stroke-width="3"/>
+    </g>
+
+    <!-- Corrected final node -->
+    <g id="r1c7">
+      <rect x="1027" y="103" width="72" height="40" rx="6" fill="#000000"/>
+      <rect x="1024" y="100" width="72" height="40" rx="6" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+      <text x="1060" y="128" text-anchor="middle" font-weight="bold" fill="#000000">A</text>
+    </g>
+  </g>
+
+  <!-- ================= ROW 2 ================= -->
+  <g id="row2">
+    <!-- Connections & Modifiers -->
+    <line x1="146" y1="240" x2="214" y2="240" stroke="#000000" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="180" y="210" text-anchor="middle" font-size="20" fill="#000000">+6</text>
+
+    <line x1="306" y1="240" x2="374" y2="240" stroke="#000000" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="340" y="210" text-anchor="middle" font-size="20" fill="#000000">+6</text>
+
+    <line x1="466" y1="240" x2="534" y2="240" stroke="#000000" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="500" y="210" text-anchor="middle" font-size="20" fill="#000000">+6</text>
+
+    <line x1="626" y1="240" x2="694" y2="240" stroke="#000000" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="660" y="210" text-anchor="middle" font-size="20" fill="#000000">+6</text>
+
+    <line x1="786" y1="240" x2="854" y2="240" stroke="#000000" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="820" y="210" text-anchor="middle" font-size="20" fill="#000000">+6</text>
+
+    <!-- Nodes -->
+    <g id="r2c1">
+      <rect x="67" y="223" width="72" height="40" rx="6" fill="#000000"/>
+      <rect x="64" y="220" width="72" height="40" rx="6" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+      <text x="100" y="248" text-anchor="middle" font-weight="bold" fill="#000000">F</text>
+    </g>
+
+    <g id="r2c2">
+      <rect x="227" y="223" width="72" height="40" rx="6" fill="#000000"/>
+      <rect x="224" y="220" width="72" height="40" rx="6" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+      <text x="260" y="248" text-anchor="middle" font-weight="bold" fill="#000000">L</text>
+    </g>
+
+    <g id="r2c3">
+      <rect x="387" y="223" width="72" height="40" rx="6" fill="#000000"/>
+      <rect x="384" y="220" width="72" height="40" rx="6" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+      <text x="420" y="248" text-anchor="middle" font-weight="bold" fill="#000000">R</text>
+    </g>
+
+    <g id="r2c4">
+      <rect x="547" y="223" width="72" height="40" rx="6" fill="#000000"/>
+      <rect x="544" y="220" width="72" height="40" rx="6" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+      <text x="580" y="248" text-anchor="middle" font-weight="bold" fill="#000000">X</text>
+    </g>
+
+    <g id="r2c5">
+      <rect x="707" y="223" width="72" height="40" rx="6" fill="#000000"/>
+      <rect x="704" y="220" width="72" height="40" rx="6" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+      <text x="740" y="248" text-anchor="middle" font-weight="bold" fill="#000000">D</text>
+    </g>
+
+    <!-- Crossed out mistake -->
+    <g id="r2c6">
+      <rect x="867" y="223" width="72" height="40" rx="6" fill="#000000"/>
+      <rect x="864" y="220" width="72" height="40" rx="6" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+      <text x="900" y="248" text-anchor="middle" font-weight="bold" fill="#000000">Y</text>
+      <line x1="885" y1="240" x2="915" y2="240" stroke="#000000" stroke-width="3"/>
+    </g>
+
+    <!-- Corrected final node -->
+    <g id="r2c7">
+      <rect x="1027" y="223" width="72" height="40" rx="6" fill="#000000"/>
+      <rect x="1024" y="220" width="72" height="40" rx="6" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+      <text x="1060" y="248" text-anchor="middle" font-weight="bold" fill="#000000">J</text>
+    </g>
+  </g>
+
+  <!-- ================= ROW 3 ================= -->
+  <g id="row3">
+    <!-- Connections & Modifiers -->
+    <line x1="146" y1="360" x2="214" y2="360" stroke="#000000" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="180" y="330" text-anchor="middle" font-size="20" fill="#000000">-4</text>
+
+    <line x1="306" y1="360" x2="374" y2="360" stroke="#000000" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="340" y="330" text-anchor="middle" font-size="20" fill="#000000">-4</text>
+
+    <line x1="466" y1="360" x2="534" y2="360" stroke="#000000" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="500" y="330" text-anchor="middle" font-size="20" fill="#000000">-4</text>
+
+    <line x1="626" y1="360" x2="694" y2="360" stroke="#000000" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="660" y="330" text-anchor="middle" font-size="20" fill="#000000">-4</text>
+
+    <line x1="786" y1="360" x2="854" y2="360" stroke="#000000" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="820" y="330" text-anchor="middle" font-size="20" fill="#000000">-4</text>
+
+    <!-- Nodes -->
+    <g id="r3c1">
+      <rect x="67" y="343" width="72" height="40" rx="6" fill="#000000"/>
+      <rect x="64" y="340" width="72" height="40" rx="6" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+      <text x="100" y="368" text-anchor="middle" font-weight="bold" fill="#000000">Y</text>
+    </g>
+
+    <g id="r3c2">
+      <rect x="227" y="343" width="72" height="40" rx="6" fill="#000000"/>
+      <rect x="224" y="340" width="72" height="40" rx="6" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+      <text x="260" y="368" text-anchor="middle" font-weight="bold" fill="#000000">U</text>
+    </g>
+
+    <g id="r3c3">
+      <rect x="387" y="343" width="72" height="40" rx="6" fill="#000000"/>
+      <rect x="384" y="340" width="72" height="40" rx="6" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+      <text x="420" y="368" text-anchor="middle" font-weight="bold" fill="#000000">Q</text>
+    </g>
+
+    <g id="r3c4">
+      <rect x="547" y="343" width="72" height="40" rx="6" fill="#000000"/>
+      <rect x="544" y="340" width="72" height="40" rx="6" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+      <text x="580" y="368" text-anchor="middle" font-weight="bold" fill="#000000">M</text>
+    </g>
+
+    <g id="r3c5">
+      <rect x="707" y="343" width="72" height="40" rx="6" fill="#000000"/>
+      <rect x="704" y="340" width="72" height="40" rx="6" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+      <text x="740" y="368" text-anchor="middle" font-weight="bold" fill="#000000">I</text>
+    </g>
+
+    <!-- Crossed out mistake -->
+    <g id="r3c6">
+      <rect x="867" y="343" width="72" height="40" rx="6" fill="#000000"/>
+      <rect x="864" y="340" width="72" height="40" rx="6" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+      <text x="900" y="368" text-anchor="middle" font-weight="bold" fill="#000000">D</text>
+      <line x1="885" y1="360" x2="915" y2="360" stroke="#000000" stroke-width="3"/>
+    </g>
+
+    <!-- Corrected final node -->
+    <g id="r3c7">
+      <rect x="1027" y="343" width="72" height="40" rx="6" fill="#000000"/>
+      <rect x="1024" y="340" width="72" height="40" rx="6" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+      <text x="1060" y="368" text-anchor="middle" font-weight="bold" fill="#000000">E</text>
+    </g>
+  </g>
+
+  <!-- ================= ROW 4 ================= -->
+  <g id="row4">
+    <!-- Connections & Modifiers -->
+    <line x1="146" y1="480" x2="214" y2="480" stroke="#000000" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="180" y="450" text-anchor="middle" font-size="20" fill="#000000">+2</text>
+
+    <line x1="306" y1="480" x2="374" y2="480" stroke="#000000" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="340" y="450" text-anchor="middle" font-size="20" fill="#000000">+2</text>
+
+    <line x1="466" y1="480" x2="534" y2="480" stroke="#000000" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="500" y="450" text-anchor="middle" font-size="20" fill="#000000">+2</text>
+
+    <line x1="626" y1="480" x2="694" y2="480" stroke="#000000" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="660" y="450" text-anchor="middle" font-size="20" fill="#000000">+2</text>
+
+    <line x1="786" y1="480" x2="854" y2="480" stroke="#000000" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="820" y="450" text-anchor="middle" font-size="20" fill="#000000">+2</text>
+
+    <!-- Nodes -->
+    <g id="r4c1">
+      <rect x="67" y="463" width="72" height="40" rx="6" fill="#000000"/>
+      <rect x="64" y="460" width="72" height="40" rx="6" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+      <text x="100" y="488" text-anchor="middle" font-weight="bold" fill="#000000">253</text>
+    </g>
+
+    <g id="r4c2">
+      <rect x="227" y="463" width="72" height="40" rx="6" fill="#000000"/>
+      <rect x="224" y="460" width="72" height="40" rx="6" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+      <text x="260" y="488" text-anchor="middle" font-weight="bold" fill="#000000">255</text>
+    </g>
+
+    <g id="r4c3">
+      <rect x="387" y="463" width="72" height="40" rx="6" fill="#000000"/>
+      <rect x="384" y="460" width="72" height="40" rx="6" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+      <text x="420" y="488" text-anchor="middle" font-weight="bold" fill="#000000">257</text>
+    </g>
+
+    <g id="r4c4">
+      <rect x="547" y="463" width="72" height="40" rx="6" fill="#000000"/>
+      <rect x="544" y="460" width="72" height="40" rx="6" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+      <text x="580" y="488" text-anchor="middle" font-weight="bold" fill="#000000">259</text>
+    </g>
+
+    <g id="r4c5">
+      <rect x="707" y="463" width="72" height="40" rx="6" fill="#000000"/>
+      <rect x="704" y="460" width="72" height="40" rx="6" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+      <text x="740" y="488" text-anchor="middle" font-weight="bold" fill="#000000">261</text>
+    </g>
+
+    <!-- Crossed out mistake -->
+    <g id="r4c6">
+      <rect x="867" y="463" width="72" height="40" rx="6" fill="#000000"/>
+      <rect x="864" y="460" width="72" height="40" rx="6" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+      <text x="900" y="488" text-anchor="middle" font-weight="bold" fill="#000000">265</text>
+      <line x1="875" y1="480" x2="925" y2="480" stroke="#000000" stroke-width="3"/>
+    </g>
+
+    <!-- Corrected final node -->
+    <g id="r4c7">
+      <rect x="1027" y="463" width="72" height="40" rx="6" fill="#000000"/>
+      <rect x="1024" y="460" width="72" height="40" rx="6" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+      <text x="1060" y="488" text-anchor="middle" font-weight="bold" fill="#000000">263</text>
+    </g>
+  </g>
+</svg>

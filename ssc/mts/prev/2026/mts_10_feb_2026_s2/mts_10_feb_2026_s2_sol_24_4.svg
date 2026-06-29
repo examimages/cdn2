@@ -1,0 +1,44 @@
+<svg width="207" height="103" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#000000" />
+    </marker>
+  </defs>
+
+  <style>
+    text {
+      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 24px;
+      fill: #000000;
+      text-anchor: middle;
+    }
+    line {
+      stroke: #000000;
+      stroke-width: 2;
+    }
+  </style>
+
+  <!-- Column 1: S -> X -->
+  <g transform="translate(100, 60)">
+    <text x="0" y="0">S</text>
+    <line x1="0" y1="20" x2="0" y2="100" marker-end="url(#arrow)" />
+    <text x="45" y="70" style="text-anchor: middle;">+5</text>
+    <text x="0" y="145">X</text>
+  </g>
+
+  <!-- Column 2: E -> J -->
+  <g transform="translate(300, 60)">
+    <text x="0" y="0">E</text>
+    <line x1="0" y1="20" x2="0" y2="100" marker-end="url(#arrow)" />
+    <text x="45" y="70" style="text-anchor: middle;">+5</text>
+    <text x="0" y="145">J</text>
+  </g>
+
+  <!-- Column 3: P -> U -->
+  <g transform="translate(500, 60)">
+    <text x="0" y="0">P</text>
+    <line x1="0" y1="20" x2="0" y2="100" marker-end="url(#arrow)" />
+    <text x="45" y="70" style="text-anchor: middle;">+5</text>
+    <text x="0" y="145">U</text>
+  </g>
+</svg>

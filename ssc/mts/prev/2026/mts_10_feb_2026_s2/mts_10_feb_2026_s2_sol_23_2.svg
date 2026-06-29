@@ -1,0 +1,64 @@
+<svg width="215" height="111" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400"   style="background-color: #ffffff; font-family: 'Segoe UI', -apple-system, Roboto, Helvetica, Arial, sans-serif; font-size: 24px;">
+    <defs>
+        <!-- Arrowhead Marker -->
+        <marker id="arrow" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#000000" />
+        </marker>
+        
+        <!-- Subtle Grayscale Radial Gradient for Nodes -->
+        <radialGradient id="nodeGrad" cx="30%" cy="30%" r="70%">
+            <stop offset="0%" stop-color="#ffffff"/>
+            <stop offset="100%" stop-color="#e8e8e8"/>
+        </radialGradient>
+        
+        <!-- Drop Shadow Filter for a Modern Look -->
+        <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+            <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#000000" flood-opacity="0.12"/>
+        </filter>
+    </defs>
+
+    <!-- Top Row Nodes -->
+    <g stroke="#000000" stroke-width="2.5" fill="url(#nodeGrad)" filter="url(#shadow)">
+        <circle cx="150" cy="100" r="45" />
+        <circle cx="300" cy="100" r="45" />
+        <circle cx="450" cy="100" r="45" />
+    </g>
+
+    <!-- Bottom Row Nodes -->
+    <g stroke="#000000" stroke-width="2.5" fill="url(#nodeGrad)" filter="url(#shadow)">
+        <circle cx="150" cy="300" r="45" />
+        <circle cx="300" cy="300" r="45" />
+        <circle cx="450" cy="300" r="45" />
+    </g>
+
+    <!-- Connector Lines -->
+    <g stroke="#000000" stroke-width="3" fill="none" marker-end="url(#arrow)">
+        <!-- O to J -->
+        <line x1="150" y1="155" x2="150" y2="240" />
+        <!-- L to G -->
+        <line x1="300" y1="155" x2="300" y2="240" />
+        <!-- B to W -->
+        <line x1="450" y1="155" x2="450" y2="240" />
+    </g>
+
+    <!-- Arrow Labels (-5) -->
+    <g fill="#000000" font-weight="bold" font-size="24px" text-anchor="start">
+        <text x="170" y="206">-5</text>
+        <text x="320" y="206">-5</text>
+        <text x="470" y="206">-5</text>
+    </g>
+
+    <!-- Top Row Text Labels -->
+    <g fill="#000000" font-weight="bold" font-size="36px" text-anchor="middle">
+        <text x="150" y="113">O</text>
+        <text x="300" y="113">L</text>
+        <text x="450" y="113">B</text>
+    </g>
+
+    <!-- Bottom Row Text Labels -->
+    <g fill="#000000" font-weight="bold" font-size="36px" text-anchor="middle">
+        <text x="150" y="313">J</text>
+        <text x="300" y="313">G</text>
+        <text x="450" y="313">W</text>
+    </g>
+</svg>

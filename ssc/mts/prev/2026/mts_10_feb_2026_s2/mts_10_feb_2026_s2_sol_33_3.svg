@@ -1,0 +1,86 @@
+<svg width="178" height="116" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 400"   style="background-color: #ffffff;">
+    <defs>
+        <!-- Arrowhead Marker -->
+        <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#000000" />
+        </marker>
+        
+        <!-- Subtle Drop Shadow for Nodes -->
+        <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+            <feDropShadow dx="3" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.12" />
+        </filter>
+        
+        <!-- Styles -->
+        <style>
+            text {
+                font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+                font-size: 24px;
+                fill: #000000;
+            }
+            .node-box {
+                fill: #ffffff;
+                stroke: #000000;
+                stroke-width: 2.5;
+                filter: url(#shadow);
+            }
+            .node-text {
+                font-weight: 700;
+                text-anchor: middle;
+                dominant-baseline: central;
+            }
+            .modifier-text {
+                font-weight: 500;
+                text-anchor: start;
+                dominant-baseline: central;
+            }
+            .connector {
+                stroke: #000000;
+                stroke-width: 2.5;
+                stroke-linecap: round;
+            }
+        </style>
+    </defs>
+
+    <!-- ================= Column 1 ================= -->
+    
+    <!-- Top Node -->
+    <rect x="110" y="60" width="80" height="60" rx="8" class="node-box" />
+    <text x="150" y="90" class="node-text">F</text>
+    
+    <!-- Connector & Modifier -->
+    <line x1="150" y1="120" x2="150" y2="262" class="connector" marker-end="url(#arrow)" />
+    <text x="170" y="191" class="modifier-text">-2</text>
+
+    <!-- Bottom Node -->
+    <rect x="110" y="275" width="80" height="60" rx="8" class="node-box" />
+    <text x="150" y="305" class="node-text">D</text>
+
+    <!-- ================= Column 2 ================= -->
+    
+    <!-- Top Node -->
+    <rect x="310" y="60" width="80" height="60" rx="8" class="node-box" />
+    <text x="350" y="90" class="node-text">R</text>
+    
+    <!-- Connector & Modifier -->
+    <line x1="350" y1="120" x2="350" y2="262" class="connector" marker-end="url(#arrow)" />
+    <text x="370" y="191" class="modifier-text">-4</text>
+
+    <!-- Bottom Node -->
+    <rect x="310" y="275" width="80" height="60" rx="8" class="node-box" />
+    <text x="350" y="305" class="node-text">N</text>
+
+    <!-- ================= Column 3 ================= -->
+    
+    <!-- Top Node -->
+    <rect x="510" y="60" width="90" height="60" rx="8" class="node-box" />
+    <text x="555" y="90" class="node-text">60</text>
+    
+    <!-- Connector & Modifier -->
+    <line x1="555" y1="120" x2="555" y2="262" class="connector" marker-end="url(#arrow)" />
+    <text x="575" y="191" class="modifier-text">+80</text>
+
+    <!-- Bottom Node -->
+    <rect x="510" y="275" width="90" height="60" rx="8" class="node-box" />
+    <text x="555" y="305" class="node-text">140</text>
+
+</svg>

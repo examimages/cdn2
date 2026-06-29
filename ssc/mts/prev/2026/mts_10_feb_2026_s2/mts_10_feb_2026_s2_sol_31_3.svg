@@ -1,0 +1,66 @@
+<svg width="515" height="281" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 450"  >
+  <defs>
+    <!-- Subtle drop shadow for the main boxes -->
+    <filter id="boxShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.15" />
+    </filter>
+  </defs>
+
+  <!-- Background to ensure clean monochrome rendering -->
+  <rect width="100%" height="100%" fill="#ffffff" />
+
+  <!-- MAIN BOXES -->
+  <!-- Left Box -->
+  <rect x="200" y="250" width="160" height="160" rx="8" fill="#ffffff" stroke="#000000" stroke-width="3" filter="url(#boxShadow)" />
+  <!-- Right Box -->
+  <rect x="540" y="250" width="160" height="160" rx="8" fill="#ffffff" stroke="#000000" stroke-width="3" filter="url(#boxShadow)" />
+
+  <!-- MIDDLE COLON SYMBOL -->
+  <circle cx="450" cy="310" r="4.5" fill="none" stroke="#000000" stroke-width="3" />
+  <circle cx="450" cy="340" r="4.5" fill="none" stroke="#000000" stroke-width="3" />
+
+  <!-- INNER SHAPES & SYMBOLS -->
+  
+  <!-- Left Box Elements -->
+  <!-- Top-Left: Filled Triangle -->
+  <polygon points="235,271 221,295 249,295" fill="#000000" stroke="#000000" stroke-width="1.5" stroke-linejoin="round" />
+  <!-- Center: Hollow Square -->
+  <rect x="268" y="318" width="24" height="24" fill="none" stroke="#000000" stroke-width="3" />
+  
+  <!-- Right Box Elements -->
+  <!-- Top-Right: Filled Triangle -->
+  <polygon points="665,271 651,295 679,295" fill="#000000" stroke="#000000" stroke-width="1.5" stroke-linejoin="round" />
+  <!-- Center: Triangle with inner hollow square -->
+  <polygon points="620,305 588,350 652,350" fill="none" stroke="#000000" stroke-width="3" stroke-linejoin="round" />
+  <rect x="612" y="328" width="16" height="16" fill="none" stroke="#000000" stroke-width="2.5" />
+
+  <!-- TEXT LABELS -->
+  <g font-family="Georgia, 'Times New Roman', serif" font-size="24px" font-weight="bold" fill="#000000" text-anchor="middle" dominant-baseline="central">
+    <!-- Left Box Text -->
+    <text x="325" y="285">T</text>
+    <text x="235" y="375">#</text>
+    <text x="325" y="375">P</text>
+    
+    <!-- Right Box Text -->
+    <text x="575" y="285">#</text>
+    <text x="575" y="375">P</text>
+    <text x="665" y="375">T</text>
+  </g>
+
+  <!-- CONNECTING LINES (Rendered over the boxes) -->
+  <g fill="none" stroke="#000000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    
+    <!-- Arc 1: Bottom-Left # to Top-Left # -->
+    <path d="M 220, 375 C 60, 350 110, 40 405, 40 C 570, 40 575, 150 575, 260" />
+    
+    <!-- Arc 2: Top-Left Triangle to Top-Right Triangle -->
+    <path d="M 235, 265 C 235, 100 665, 100 665, 265" />
+    
+    <!-- Arc 3: Top-Right T to Bottom-Right T -->
+    <path d="M 325, 265 C 325, 40 820, 60 680, 375" />
+    
+    <!-- Arc 4: Bottom-Right P to Bottom-Left P (Passes right through the colon space) -->
+    <path d="M 345, 370 C 410, 310 490, 310 555, 370" />
+    
+  </g>
+</svg>

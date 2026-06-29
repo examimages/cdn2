@@ -1,0 +1,56 @@
+<svg width="265" height="103" viewBox="0 0 600 400"   xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Arrowhead Marker -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#000000" />
+    </marker>
+    
+    <!-- Subtle Drop Shadow for Nodes -->
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="3" dy="4" stdDeviation="3" flood-color="#000000" flood-opacity="0.15" />
+    </filter>
+  </defs>
+
+  <!-- Plain White Background -->
+  <rect width="100%" height="100%" fill="#ffffff" />
+
+  <!-- Connector Lines & Arrows -->
+  <g stroke="#000000" stroke-width="3" stroke-linecap="round">
+    <line x1="125" y1="145" x2="125" y2="250" marker-end="url(#arrow)" />
+    <line x1="300" y1="145" x2="300" y2="250" marker-end="url(#arrow)" />
+    <line x1="475" y1="145" x2="475" y2="250" marker-end="url(#arrow)" />
+  </g>
+
+  <!-- Arrow Labels -->
+  <g font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="24px" font-weight="bold" fill="#000000" text-anchor="start" dominant-baseline="central">
+    <text x="140" y="197">-5</text>
+    <text x="315" y="197">-5</text>
+    <text x="490" y="197">-5</text>
+  </g>
+
+  <!-- Node Shapes -->
+  <g fill="#ffffff" stroke="#000000" stroke-width="2" filter="url(#shadow)">
+    <!-- Top Row -->
+    <rect x="90" y="65" width="70" height="70" rx="12" ry="12" />
+    <rect x="265" y="65" width="70" height="70" rx="12" ry="12" />
+    <rect x="440" y="65" width="70" height="70" rx="12" ry="12" />
+    
+    <!-- Bottom Row -->
+    <rect x="90" y="265" width="70" height="70" rx="12" ry="12" />
+    <rect x="265" y="265" width="70" height="70" rx="12" ry="12" />
+    <rect x="440" y="265" width="70" height="70" rx="12" ry="12" />
+  </g>
+
+  <!-- Node Text Labels -->
+  <g font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="36px" font-weight="bold" fill="#000000" text-anchor="middle" dominant-baseline="central">
+    <!-- Top Row Text -->
+    <text x="125" y="102">C</text>
+    <text x="300" y="102">W</text>
+    <text x="475" y="102">M</text>
+    
+    <!-- Bottom Row Text -->
+    <text x="125" y="302">X</text>
+    <text x="300" y="302">R</text>
+    <text x="475" y="302">H</text>
+  </g>
+</svg>

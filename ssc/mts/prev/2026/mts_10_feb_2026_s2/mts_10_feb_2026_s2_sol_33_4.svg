@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="218" height="105"   viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Define arrowhead marker -->
+    <marker id="arrowhead" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#000000" />
+    </marker>
+  </defs>
+
+  <!-- Background (Optional for contrast, keeping transparent as requested) -->
+  <rect width="100%" height="100%" fill="none" />
+
+  <!-- Set common styles for text and lines -->
+  <g fill="#000000" font-family="Arial, sans-serif" font-size="24px" stroke-linecap="round">
+    
+    <!-- Column 1: Z -> X -->
+    <text x="150" y="70" text-anchor="middle">Z</text>
+    <line x1="150" y1="90" x2="150" y2="150" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+    <text x="170" y="125" text-anchor="start" style="font-size: 20px;">-2</text>
+    <text x="150" y="190" text-anchor="middle">X</text>
+
+    <!-- Column 2: W -> S -->
+    <text x="300" y="70" text-anchor="middle">W</text>
+    <line x1="300" y1="90" x2="300" y2="150" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+    <text x="320" y="125" text-anchor="start" style="font-size: 20px;">-4</text>
+    <text x="300" y="190" text-anchor="middle">S</text>
+
+    <!-- Column 3: 40 -> 120 -->
+    <text x="450" y="70" text-anchor="middle">40</text>
+    <line x1="450" y1="90" x2="450" y2="150" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+    <text x="470" y="125" text-anchor="start" style="font-size: 20px;">+80</text>
+    <text x="450" y="190" text-anchor="middle">120</text>
+
+  </g>
+</svg>
