@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="100%" height="100%">
+    <defs>
+        <!-- Arrowhead for standard arrows -->
+        <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M 0 2 L 10 5 L 0 8 z" fill="#000000"/>
+        </marker>
+        
+        <!-- Reverse arrowhead for double-headed arrow -->
+        <marker id="arrow-reverse" viewBox="0 0 10 10" refX="2" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M 10 2 L 0 5 L 10 8 z" fill="#000000"/>
+        </marker>
+
+        <!-- Sparse dots pattern for rarefactions (low pressure) -->
+        <pattern id="sparse-dots" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+            <circle cx="8" cy="8" r="1.2" fill="#000000"/>
+            <circle cx="32" cy="15" r="1.2" fill="#000000"/>
+            <circle cx="20" cy="32" r="1.2" fill="#000000"/>
+            <circle cx="10" cy="25" r="1.2" fill="#000000"/>
+            <circle cx="28" cy="35" r="1.2" fill="#000000"/>
+        </pattern>
+
+        <!-- Dense dots pattern for compressions (high pressure) -->
+        <pattern id="dense-dots" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+            <!-- Includes all sparse dots -->
+            <circle cx="8" cy="8" r="1.2" fill="#000000"/>
+            <circle cx="32" cy="15" r="1.2" fill="#000000"/>
+            <circle cx="20" cy="32" r="1.2" fill="#000000"/>
+            <circle cx="10" cy="25" r="1.2" fill="#000000"/>
+            <circle cx="28" cy="35" r="1.2" fill="#000000"/>
+            <!-- Additional dense dots -->
+            <circle cx="5" cy="20" r="1.2" fill="#000000"/>
+            <circle cx="15" cy="10" r="1.2" fill="#000000"/>
+            <circle cx="35" cy="5" r="1.2" fill="#000000"/>
+            <circle cx="25" cy="25" r="1.2" fill="#000000"/>
+            <circle cx="15" cy="35" r="1.2" fill="#000000"/>
+            <circle cx="35" cy="28" r="1.2" fill="#000000"/>
+            <circle cx="5" cy="5" r="1.2" fill="#000000"/>
+            <circle cx="12" cy="18" r="1.2" fill="#000000"/>
+            <circle cx="28" cy="12" r="1.2" fill="#000000"/>
+            <circle cx="22" cy="8" r="1.2" fill="#000000"/>
+            <circle cx="18" cy="22" r="1.2" fill="#000000"/>
+            <circle cx="32" cy="22" r="1.2" fill="#000000"/>
+            <circle cx="8" cy="38" r="1.2" fill="#000000"/>
+            <circle cx="38" cy="12" r="1.2" fill="#000000"/>
+            <circle cx="38" cy="38" r="1.2" fill="#000000"/>
+            <circle cx="25" cy="15" r="1.2" fill="#000000"/>
+            <circle cx="12" cy="30" r="1.2" fill="#000000"/>
+            <circle cx="30" cy="5" r="1.2" fill="#000000"/>
+            <circle cx="5" cy="32" r="1.2" fill="#000000"/>
+            <circle cx="22" cy="20" r="1.2" fill="#000000"/>
+        </pattern>
+
+        <!-- Gradient mask to align particle density directly with the sine wave phase -->
+        <linearGradient id="wave-mask-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#888888"/>
+            <stop offset="6.67%" stop-color="#ffffff"/>  <!-- Peak 1 -->
+            <stop offset="20.00%" stop-color="#000000"/> <!-- Trough 1 -->
+            <stop offset="33.33%" stop-color="#ffffff"/> <!-- Peak 2 -->
+            <stop offset="46.67%" stop-color="#000000"/> <!-- Trough 2 -->
+            <stop offset="60.00%" stop-color="#ffffff"/> <!-- Peak 3 -->
+            <stop offset="73.33%" stop-color="#000000"/> <!-- Trough 3 -->
+            <stop offset="86.67%" stop-color="#ffffff"/> <!-- Peak 4 -->
+            <stop offset="100.00%" stop-color="#000000"/> <!-- Trough 4 -->
+        </linearGradient>
+
+        <mask id="wave-mask">
+            <rect x="50" y="280" width="900" height="120" fill="url(#wave-mask-grad)"/>
+        </mask>
+    </defs>
+
+    <style>
+        .label {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 24px;
+            fill: #000000;
+            text-anchor: middle;
+        }
+        .line-bold {
+            stroke: #000000;
+            stroke-width: 2px;
+            fill: none;
+        }
+        .line-dashed {
+            stroke: #000000;
+            stroke-width: 2px;
+            stroke-dasharray: 8 8;
+            fill: none;
+        }
+    </style>
+
+    <!-- Top Section: Pressure Graph -->
+    <g id="pressure-graph">
+        <!-- Atmospheric Pressure Baseline (Dashed) -->
+        <line x1="50" y1="150" x2="950" y2="150" class="line-dashed"/>
+
+        <!-- Sine Wave representing Pressure -->
+        <!-- Wavelength = 240, Amplitude = 60 (Y varies from 90 to 210, center 150) -->
+        <path d="M 50 150 &#10;                 Q 80 90, 110 90 T 170 150 &#10;                 T 230 210 T 290 150 &#10;                 T 350 90 T 410 150 &#10;                 T 470 210 T 530 150 &#10;                 T 590 90 T 650 150 &#10;                 T 710 210 T 770 150 &#10;                 T 830 90 T 890 150 &#10;                 T 950 210" class="line-bold"/>
+    </g>
+
+    <!-- Top Section: Arrows indicating pressure change -->
+    <g id="top-arrows">
+        <!-- Up arrow: Increased Pressure -->
+        <line x1="110" y1="150" x2="110" y2="98" class="line-bold" marker-end="url(#arrow)"/>
+        
+        <!-- Down arrow: Decreased Pressure -->
+        <line x1="230" y1="150" x2="230" y2="202" class="line-bold" marker-end="url(#arrow)"/>
+        
+        <!-- Down arrow: Atmospheric Pressure label pointing to baseline -->
+        <line x1="470" y1="85" x2="470" y2="142" class="line-bold" marker-end="url(#arrow)"/>
+    </g>
+
+    <!-- Top Section: Labels -->
+    <g id="top-labels">
+        <!-- Increased Pressure -->
+        <text x="110" y="45" class="label">
+            <tspan x="110" dy="0">Increased</tspan>
+            <tspan x="110" dy="28">Pressure</tspan>
+        </text>
+
+        <!-- Decreased Pressure -->
+        <text x="230" y="255" class="label">Decreased Pressure</text>
+
+        <!-- Atmospheric Pressure -->
+        <text x="470" y="45" class="label">
+            <tspan x="470" dy="0">Atmospheric</tspan>
+            <tspan x="470" dy="28">Pressure</tspan>
+        </text>
+    </g>
+
+    <!-- Middle Section: Particle Tube -->
+    <g id="particle-tube">
+        <!-- Base sparse dots layer (always visible, representing minimum gas density) -->
+        <rect x="50" y="280" width="900" height="120" fill="url(#sparse-dots)"/>
+        
+        <!-- Overlaid dense dots layer (masked by sine wave phase to create compressions) -->
+        <rect x="50" y="280" width="900" height="120" fill="url(#dense-dots)" mask="url(#wave-mask)"/>
+        
+        <!-- Clean outer border for the tube -->
+        <rect x="50" y="280" width="900" height="120" class="line-bold"/>
+    </g>
+
+    <!-- Bottom Section: Arrows -->
+    <g id="bottom-arrows">
+        <!-- Double-headed arrow: Motion of air molecules -->
+        <line x1="430" y1="440" x2="510" y2="440" class="line-bold" marker-start="url(#arrow-reverse)" marker-end="url(#arrow)"/>
+        
+        <!-- Single-headed arrow: Propagation of sound -->
+        <line x1="710" y1="440" x2="830" y2="440" class="line-bold" marker-end="url(#arrow)"/>
+    </g>
+
+    <!-- Bottom Section: Labels -->
+    <g id="bottom-labels">
+        <!-- Motion of air molecules associated with sound -->
+        <text x="470" y="475" class="label">
+            <tspan x="470" dy="0">Motion of air</tspan>
+            <tspan x="470" dy="30">molecules associated</tspan>
+            <tspan x="470" dy="30">with sound</tspan>
+        </text>
+
+        <!-- Propogation of sound (spelling preserved from handwritten sketch as requested) -->
+        <text x="770" y="475" class="label">
+            <tspan x="770" dy="0">Propogation of</tspan>
+            <tspan x="770" dy="30">sound</tspan>
+        </text>
+    </g>
+</svg>

@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 650" style="font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 24px;">
+    <defs>
+        <!-- Soft Drop Shadow for the Prism -->
+        <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+            <feDropShadow dx="0" dy="8" stdDeviation="12" flood-opacity="0.15"/>
+        </filter>
+
+        <!-- Glass Prism Gradient -->
+        <linearGradient id="prismGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#E0F7FA" stop-opacity="0.95"/>
+            <stop offset="100%" stop-color="#80DEEA" stop-opacity="0.6"/>
+        </linearGradient>
+
+        <!-- Arrowhead Markers for each color -->
+        <marker id="arrow-cyan" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M 1 2 L 9 5 L 1 8 Z" fill="#06B6D4"/>
+        </marker>
+        <marker id="arrow-red" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M 1 2 L 9 5 L 1 8 Z" fill="#EF4444"/>
+        </marker>
+        <marker id="arrow-orange" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M 1 2 L 9 5 L 1 8 Z" fill="#F97316"/>
+        </marker>
+        <marker id="arrow-yellow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M 1 2 L 9 5 L 1 8 Z" fill="#D97706"/>
+        </marker>
+        <marker id="arrow-green" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M 1 2 L 9 5 L 1 8 Z" fill="#10B981"/>
+        </marker>
+        <marker id="arrow-blue" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M 1 2 L 9 5 L 1 8 Z" fill="#3B82F6"/>
+        </marker>
+        <marker id="arrow-violet" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M 1 2 L 9 5 L 1 8 Z" fill="#8B5CF6"/>
+        </marker>
+    </defs>
+
+    <!-- Screen -->
+    <line x1="894" y1="200" x2="777" y2="590" stroke="#06B6D4" stroke-width="4" stroke-linecap="round"/>
+    <text x="894" y="180" fill="#0891B2" text-anchor="middle" font-weight="600">Screen</text>
+
+    <!-- Prism Background (Draw first to place rays "inside" realistically) -->
+    <polygon points="400,100 200,450 600,450" fill="url(#prismGrad)" filter="url(#shadow)"/>
+
+    <!-- Incident Ray (White Light) -->
+    <!-- Collinear points to properly align the mid-marker -->
+    <polyline points="30,358 172,304 314,250" fill="none" stroke="#06B6D4" stroke-width="3" marker-mid="url(#arrow-cyan)"/>
+    
+    <g transform="translate(130, 320) rotate(-20.8)">
+        <text x="0" y="-35" fill="#0891B2" text-anchor="middle" font-weight="600">White</text>
+        <text x="0" y="-8" fill="#0891B2" text-anchor="middle" font-weight="600">light</text>
+    </g>
+
+    <!-- Internal Rays (Inside the Prism) -->
+    <line x1="314" y1="250" x2="446" y2="180" stroke="#EF4444" stroke-width="2.5" opacity="0.8"/>
+    <line x1="314" y1="250" x2="457" y2="200" stroke="#F97316" stroke-width="2.5" opacity="0.8"/>
+    <line x1="314" y1="250" x2="469" y2="220" stroke="#D97706" stroke-width="2.5" opacity="0.8"/>
+    <line x1="314" y1="250" x2="480" y2="240" stroke="#10B981" stroke-width="2.5" opacity="0.8"/>
+    <line x1="314" y1="250" x2="491" y2="260" stroke="#3B82F6" stroke-width="2.5" opacity="0.8"/>
+    <line x1="314" y1="250" x2="503" y2="280" stroke="#8B5CF6" stroke-width="2.5" opacity="0.8"/>
+
+    <!-- Emerged Rays (Hitting the Screen) -->
+    <!-- Using 3 collinear points for each ray to perfectly orient the mid-marker arrow -->
+    <polyline points="446,180 658,230 870,280" fill="none" stroke="#EF4444" stroke-width="2.5" marker-mid="url(#arrow-red)"/>
+    <polyline points="457,200 656,265 855,330" fill="none" stroke="#F97316" stroke-width="2.5" marker-mid="url(#arrow-orange)"/>
+    <polyline points="469,220 654.5,300 840,380" fill="none" stroke="#D97706" stroke-width="2.5" marker-mid="url(#arrow-yellow)"/>
+    <polyline points="480,240 652.5,335 825,430" fill="none" stroke="#10B981" stroke-width="2.5" marker-mid="url(#arrow-green)"/>
+    <polyline points="491,260 650.5,370 810,480" fill="none" stroke="#3B82F6" stroke-width="2.5" marker-mid="url(#arrow-blue)"/>
+    <polyline points="503,280 649,405 795,530" fill="none" stroke="#8B5CF6" stroke-width="2.5" marker-mid="url(#arrow-violet)"/>
+
+    <!-- Prism Border (Drawn over rays for a clean edge junction) -->
+    <polygon points="400,100 200,450 600,450" fill="none" stroke="#06B6D4" stroke-width="4" stroke-linejoin="round"/>
+    
+    <text x="400" y="50" fill="#0891B2" text-anchor="middle" font-weight="600">Glass</text>
+    <text x="400" y="80" fill="#0891B2" text-anchor="middle" font-weight="600">prism</text>
+
+    <!-- Color Spectrum Labels -->
+    <text x="890" y="288" fill="#EF4444" text-anchor="start" font-weight="600">Red</text>
+    <text x="875" y="338" fill="#F97316" text-anchor="start" font-weight="600">Orange</text>
+    <text x="860" y="388" fill="#D97706" text-anchor="start" font-weight="600">Yellow</text>
+    <text x="845" y="438" fill="#10B981" text-anchor="start" font-weight="600">Green</text>
+    <text x="830" y="488" fill="#3B82F6" text-anchor="start" font-weight="600">Blue</text>
+    <text x="815" y="538" fill="#8B5CF6" text-anchor="start" font-weight="600">Violet</text>
+</svg>
